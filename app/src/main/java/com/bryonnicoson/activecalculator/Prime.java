@@ -37,12 +37,9 @@ public class Prime extends AppCompatActivity {
                 for (int i = 3; i * i <= a; i += 2) {
                     if (a % i == 0) isPrime = "is not prime.";
                 }
-
                 mIsPrime.setText("The number " + Integer.toString(a) + " " + isPrime);
             }
         };
-
         mButton.setOnClickListener(listener);
     }
-
 }

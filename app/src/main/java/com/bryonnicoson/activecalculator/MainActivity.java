@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntendToAdd);
             }
         };
-
         btn_add.setOnClickListener(listenerAdd);
 
         Button btn_subtract = (Button) findViewById(R.id.btn_subtract);
@@ -44,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntendToSubtract);
             }
         };
-
         btn_subtract.setOnClickListener(listenerSubtract);
 
         Button btn_multiply = (Button) findViewById(R.id.btn_multiply);
@@ -57,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntendToMultiply);
             }
         };
-
         btn_multiply.setOnClickListener(listenerMultiply);
 
 
@@ -71,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntendToDivide);
             }
         };
-
         btn_divide.setOnClickListener(listenerDivide);
 
         Button btn_factorialize = (Button) findViewById(R.id.btn_factorial);
@@ -84,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntendToFactorialize);
             }
         };
-
         btn_factorialize.setOnClickListener(listenerFactorial);
 
         Button btn_prime = (Button) findViewById(R.id.btn_prime);
@@ -97,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntendToPrime);
             }
         };
-
         btn_prime.setOnClickListener(listenerPrime);
-
     }
 }
