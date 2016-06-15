@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Intent mIntendToMultiply;
     private Intent mIntendToDivide;
     private Intent mIntendToFactorialize;
+    private Intent mIntendToPrime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,5 +86,19 @@ public class MainActivity extends AppCompatActivity {
         };
 
         btn_factorialize.setOnClickListener(listenerFactorial);
+
+        Button btn_prime = (Button) findViewById(R.id.btn_prime);
+        mIntendToPrime = new Intent(MainActivity.this, Prime.class);
+
+        View.OnClickListener listenerPrime = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("MAIN", "Click btn_prime");
+                startActivity(mIntendToPrime);
+            }
+        };
+
+        btn_prime.setOnClickListener(listenerPrime);
+
     }
 }

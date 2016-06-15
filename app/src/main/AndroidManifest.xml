@@ -19,7 +19,8 @@
         <activity android:name=".Add" />
         <activity android:name=".Multiply" />
         <activity android:name=".Divide" />
-        <activity android:name=".Factorial"></activity>
+        <activity android:name=".Factorial" />
+        <activity android:name=".Prime"></activity>
     </application>
 
 </manifest>
