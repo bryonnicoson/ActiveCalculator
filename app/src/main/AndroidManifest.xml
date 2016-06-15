@@ -18,7 +18,8 @@
         <activity android:name=".Subtract" />
         <activity android:name=".Add" />
         <activity android:name=".Multiply" />
-        <activity android:name=".Divide"></activity>
+        <activity android:name=".Divide" />
+        <activity android:name=".Factorial"></activity>
     </application>
 
 </manifest>

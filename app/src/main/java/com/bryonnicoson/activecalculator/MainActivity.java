@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Intent mIntendToSubtract;
     private Intent mIntendToMultiply;
     private Intent mIntendToDivide;
+    private Intent mIntendToFactorialize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_multiply.setOnClickListener(listenerMultiply);
 
+
         Button btn_divide = (Button) findViewById(R.id.btn_divide);
         mIntendToDivide = new Intent(MainActivity.this, Divide.class);
 
@@ -70,5 +72,18 @@ public class MainActivity extends AppCompatActivity {
         };
 
         btn_divide.setOnClickListener(listenerDivide);
+
+        Button btn_factorialize = (Button) findViewById(R.id.btn_factorial);
+        mIntendToFactorialize = new Intent(MainActivity.this, Factorial.class);
+
+        View.OnClickListener listenerFactorial = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("MAIN", "Click btn_divide");
+                startActivity(mIntendToFactorialize);
+            }
+        };
+
+        btn_factorialize.setOnClickListener(listenerFactorial);
     }
 }
